@@ -12,9 +12,10 @@ The author is Juliana Saotome.
 
 ### From Docker
 
-1. Build the Docker image `docker image build -t payments-api .`
+1. `mvn install -DskipTests` to build the .jar package
+2. Build the Docker image `docker image build -t payments-api .`
     - You may need to enable Docker: `sudo systemctl start docker`
-2. Run the image `docker run -p 8080:8080 payments-api`
+3. Run the image `docker run -p 8080:8080 payments-api`
 
 ### From local machine
 
